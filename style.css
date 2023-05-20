@@ -1,0 +1,625 @@
+ @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Ruda:wght@900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Asul', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:hsl(217, 100%, 97%);
+}
+
+.container{
+    /* border: 2px solid black; */
+    width: 60%;
+    margin: 0 auto;
+    height: 80%;
+    padding: 15px;
+    background-color: hsl(231, 100%, 99%);
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px hsl(200, 2%, 75%);
+}
+
+.image
+{
+    background-image: url(./img/bg-sidebar-desktop.jpg);
+    /* border: solid 2px red; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    float: left;
+    border-radius: 10px;
+}
+
+.main{
+    /* border: blue solid 2px; */
+    float: right;
+height: 100%;
+width: 70%;
+padding: 25px 40px 5px 50px;
+}
+
+.upper{
+    margin-bottom: 20px;
+}
+
+.upper h3{
+    margin-bottom: 10px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.upper p{
+    font-weight: 400;
+    /* font-family: 'Ruda', sans-serif; */
+
+    font-size: 16px;
+    /* padding-bottom: 20px; */
+    color: rgb(101, 99, 99);
+}
+
+.tag{
+    padding-bottom: 10px;
+    display: block;
+    color: hsl(213, 96%, 18%);
+}
+
+.detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.warning{
+    color: hsl(354, 84%, 57%);
+    font-size: 12px;
+    font-family: 'Ruda', sans-serif;
+    display: none;
+}
+
+
+
+.inp{
+/* padding-bottom: 5px; */
+margin-bottom: 20px;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+outline: none;
+border: solid 2px rgb(183, 179, 179);
+/* border-color: rgb(216, 224, 224); */
+
+}
+.warningadd{
+    /* border-color: ; */
+    border:1px solid hsl(354, 84%, 57%);
+}
+
+.submit{
+    background-color:hsl(213, 96%, 18%) ;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back{
+    /* background-color:hsl(213, 96%, 18%) ; */
+    color: rgb(171, 171, 171);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: hsl(231, 100%, 99%);
+    font-family: 'Ruda', sans-serif;
+    display: none;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.flexspace{
+    justify-content: space-between;
+}
+/* .submit:hover{
+    background-color: white;
+    color: hsl(213, 96%, 18%);
+} */
+/* 
+.clearfix{
+    float: none;
+    clear: both;
+} */
+
+
+/* .ghj{
+    display: inline;
+    margin: 15px;
+    padding: 10px 15px;
+    border: 2px solid red;
+    border-radius: 50px;
+} */
+
+.box{
+    /* border: 2px solid red; */
+    margin: 20px 0;
+}
+
+.num{
+    float: left;
+    /* height: 10px; */
+    width: 30%;
+    height: 50px;
+    /* border: 2px black solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+.con{
+    float: right;
+    width: 70%;
+    /* border: black 2px solid; */
+    height: 50px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.con h6{
+    margin-bottom: 2px;
+     font-family: 'Ruda', sans-serif;
+    color: rgb(171, 171, 171);
+}
+
+.con h5{
+    color: hsl(231, 100%, 99%);
+    font-weight: 400;
+     font-family: 'Ruda', sans-serif;
+    
+}
+
+
+
+.num h3{
+    
+    display: inline;
+    border-radius: 100px;
+    padding: 5px 10px;
+    /* color: green; */
+}
+
+.num1,.num2,.num3,.num4{
+    border: 1px solid white;
+    color: hsl(231, 100%, 99%);
+}
+
+/* .num1{
+    color:hsl(213, 96%, 18%);
+    /* background-color: hsl(206, 94%, 87%); 
+} */
+
+.first h3{
+    padding: 4px 11px;
+}
+
+.give-color{
+    border: none;
+    color:hsl(213, 96%, 18%);
+    background-color: hsl(206, 94%, 87%);
+}
+
+/* .remove-color{
+    background-color: none;
+    border: 1px solid white;
+    color: hsl(231, 100%, 99%);
+} */
+
+.ndpage2{
+   /* border: 2px solid black; */
+   height: 272px;
+   display: none;
+}
+
+.ndpage3{
+    /* border: 2px solid black; */
+    height: 272px;
+    display: none;
+ }
+
+ .inner-ndpage3{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+
+ .pick{
+    border: 1.5px rgb(171, 171, 171) solid;
+    border-radius: 10px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+ }
+
+ .addpick{
+    border-color: hsl(213, 96%, 18%);
+    background-color: hsl(217, 100%, 97%);
+ }
+
+ .pick2{
+    margin: 3% 0;
+ }
+
+.pick input{
+    width: 18px;
+    height: 18px;
+    margin: 0 20px;
+    /* color: red; */
+    cursor: pointer;
+}
+
+.labelling{
+margin-right: auto;
+/* font-family: 'Ruda', sans-serif; */
+
+}
+
+.labelling h4{
+    margin-bottom: 5px;
+    font-family: 'Asul', sans-serif;
+    color: hsl(213, 96%, 18%);
+    font-weight: 900;
+}
+
+.labelling h5{
+    font-family: 'Asul', sans-serif;
+    color: rgb(171, 171, 171);
+}
+
+.pick h4:last-child{
+    color: hsl(243, 100%, 62%);
+    font-family: 'Asul', sans-serif;
+    /* font-weight: 100; */
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+
+.ndpage4{
+    /* border: 2px solid black; */
+    height: 272px;
+    display: none;
+}
+
+.upperndpage4{
+    /* border: 2px solid red; */
+    height: fit-content;
+    background-color: hsl(240, 11%, 93%);
+    padding-bottom: 5px;
+}
+
+.lowerndpage4{
+    /* border: 2px red solid; */
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+.lowerndpage4 h4:first-child{
+    color: hsl(231, 11%, 63%);
+    font-weight: 900;
+        /* font-family: 'Ruda', sans-serif; */
+}
+.lowerndpage4 h3:last-child{
+    color: hsl(243, 100%, 62%);
+    /* font-weight: 900; */
+     font-family: 'Ruda', sans-serif;
+}
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .final1{
+  
+    margin-bottom: 15px;
+    border-bottom: solid 1px hsl(231, 11%, 63%);
+    padding: 15px 0;
+  }
+
+  .finaleq{
+    margin: 10px auto;
+    
+  }
+
+  .planname h4{
+    color: hsl(213, 90%, 23%);
+    font-family: 'Ruda', sans-serif;
+    /* font-weight: 900; */
+
+  }
+
+  .final1 h4:last-child{
+    color: hsl(213, 90%, 23%);
+    font-family: 'Ruda', sans-serif;
+  }
+
+  .finaleq h4:first-child{
+    color: hsl(231, 11%, 63%);
+    font-weight: 700;
+    /* font-family: 'Ruda', sans-serif; */
+    
+    /* font-size: 16px; */
+  }
+
+  .finaleq h4:last-child{
+    color: hsl(213, 90%, 23%);
+    font-weight: 700;
+  }
+
+.inclass{
+    border: 1px black solid;
+    float: left;
+    width: 30.5%;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.inclassadd{
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
+    box-shadow: 5px 5px 20px 0 #aaa;
+}
+
+.incfirst{
+    margin-right:17px ;
+}
+
+.incsecond{
+    margin-right: 18px;
+}
+
+.inclass img{
+    margin-bottom: 30px;
+}
+
+.inclass h5{
+    color: hsl(213, 96%, 18%);
+    font-weight: 900;
+    font-family: 'Ruda', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.inclass h6{
+    color:  hsl(231, 11%, 63%);
+    font-family: 'Ruda', sans-serif;
+
+}
+
+.inclass:hover{
+    border: 1px solid hsl(213, 96%, 18%);
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 10px;
+}
+
+.innerbody{
+    /* border: 2px solid black; */
+    height: 272px;
+}
+
+
+.color{
+    color:hsl(213, 96%, 18%) ;
+    font-size: 12px;
+    font-family: 'Ruda', sans-serif;
+}
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 0 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(213, 96%, 18%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 20px;
+    left: 3px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(213, 96%, 18%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .plan-selector{
+    
+    /* border: 2px black solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    /* margin: 20px 25%; */
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    background-color: hsl(217, 100%, 97%);
+  }
+
+  .plan-selector h4{
+    /* font-family: 'Asul', sans-serif; */
+    font-family: 'Ruda', sans-serif;
+    font-size: 12px;
+  }
+  
+  .month{
+    color: hsl(213, 96%, 18%);
+  }
+
+  .year{
+    color:  hsl(231, 11%, 63%);
+  }
+
+  .colorchange{
+    /* color: hsl(213, 96%, 18%); */
+    color:  hsl(213, 96%, 18%);
+  }
+
+.infinalpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infinalpage img{
+    margin: 70px 0 40px 0;
+}
+
+.infinalpage h1{
+    color: hsl(213, 96%, 18%);
+    font-family: 'Ruda', sans-serif;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.infinalpage p{
+    color: hsl(231, 11%, 63%);
+    /* letter-spacing: 1px; */
+    word-spacing: 1px;
+    /* align-content: ; */
+}
+
+.infinalpage div{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.finalpage{
+    display: none;
+}
+
+
+
+
+.war2{
+    color: hsl(354, 84%, 57%);
+    display: none;
+    /* margin: 5px aut/o; */   
+}
+
+.warning2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0;
+    
+}
+
+
+.show{
+    display: block;
+}
+
+.remove{
+    display: none;
+}
+
+
+@media (max-width:1000px) {
+    *{
+        font-size: 10px;
+    }
+}

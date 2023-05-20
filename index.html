@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="image">
+            <!-- <img src="./img/bg-sidebar-desktop.jpg" alt="" width="100%" height="100%"> -->
+            <div class="box">
+
+                <div class="num first">
+                    <h3 class="num1">1</h3>
+                </div>
+                <div class="con">
+                    <h6>STEP 1</h6>
+                    <h5>YOUR INFO</h5>
+                </div>
+
+                <div class="num">
+                    <h3 class="num2">2</h3>
+                </div>
+                <div class="con">
+                    <h6>STEP 2</h6>
+                    <h5>SELECT PLAN</h5>
+                </div>
+
+                <div class="num">
+                    <h3 class="num3">3</h3>
+                </div>
+                <div class="con">
+                    <h6>STEP 3</h6>
+                    <h5>ADD-ONS</h5>
+                </div>
+
+                <div class="num">
+                    <h3 class="num4">4</h3>
+                </div>
+                <div class="con">
+                    <h6>STEP 4</h6>
+                    <h5>SUMMARY</h5>
+                </div>
+
+
+                <div class="clearfix"></div>
+
+
+
+
+
+
+                <!-- <h5 class="ghj">4</h5> -->
+            </div>
+        </div>
+
+        <div class="main">
+            <section class="upper">
+                <h3 class="upper-head">Personal info</h3>
+                <p class="upper-para">Please provide your name, email address, and phone number.</p>
+            </section>
+
+            <section class="bodychange">
+                <div class="innerbody">
+
+                    <form action="" class="ndpage1">
+                        <div class="detail">
+                            <label for="1" class="tag">Name</label>
+                            <h5 class="warning">This field is required</h5>
+                        </div>
+                        <input class="inp" type="text" name="1" id="1"  placeholder="e.g. Stephen King">
+
+                        <div class="detail">
+                            <label for="2" class="tag">Email Address</label>
+                        <h5 class="warning">This field is required</h5>
+                        </div>
+                        <input class="inp" type="email" name="2" id="2" placeholder="e.g. stephenking@lorem.com">
+
+                       <div class="detail">
+                        <label for="3" class="tag">Phone Number</label>
+                        <h5 class="warning">This field is required</h5>
+                       </div>
+                        <input class="inp" type="number" name="3" id="3" placeholder="e.g. +1 234 567 890">
+                    </form>
+
+                    <div class="ndpage2">
+
+                        <div class="ndpage2-upper">
+                            <div class="inclass incfirst">
+                                <img src="./img/icon-arcade.jpg" alt="" width="40px" height="40px">
+                                <h5>Arcade</h5>
+                                <h6 title=9>$9/mo</h6>
+                            </div>
+
+                            <div class="inclass incsecond">
+                                <img src="./img/icon-advanced.jpg" alt="" width="40px" height="40px">
+                                <h5>Advanced</h5>
+                                <h6 title=12>$12/mo</h6>
+                            </div>
+
+                            <div class="inclass incthird">
+                                <img src="./img/icon-pro.jpg" alt="" width="40px" height="40px">
+                                <h5>Pro</h5>
+                                <h6 title=15>$15/mo</h6>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="warning2">
+                            <h5 class="war2">Please select any one</h5>
+                        </div>
+
+                        <div class="plan-selector">
+                            <h4 class="month" id="month">Monthly</h4>
+                            <div class="switch-btn">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round" onclick="switchfn()"></span>
+                                </label>
+                            </div>
+                            <h4 class="year" id="year">Yearly</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="ndpage3">
+                        <div class="inner-ndpage3">
+                            <div class="pick pick1">
+                                <input type="checkbox" name="" id="">
+                                <div class="labelling">
+                                    <h4>Online service</h4>
+                                    <h5>Access to multiplayer games</h5>
+                                </div>
+                                <h4 title=1>+$1/mo</h4>
+                            </div>
+                            <div class="pick pick2">
+                                <input type="checkbox" name="" id="">
+                                <div class="labelling">
+                                    <h4>Larger storage</h4>
+                                    <h5>Extra 1TB of cloud save</h5>
+                                </div>
+                                <h4 title=2>+$2/mo</h4>
+                            </div>
+                            <div class="pick pick3">
+                                <input type="checkbox" name="" id="">
+                                <div class="labelling">
+                                    <h4>Customizable profile</h4>
+                                    <h5>Custom theme on your profile</h5>
+                                </div>
+                                <h4 title=3>+$3/mo</h4>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="ndpage4">
+                        <div class="upperndpage4">
+                            <div class="final final1">
+                                <div class="planname">
+                                    <h4>Arcade (Monthly)</h4>
+                                    <h5>Change</h5>
+                                </div>
+                                <h4>$90/mo</h4>
+                            </div>
+                            <div class="final finaleq">
+                                <h4>Service</h4>
+                                <h4>$1/mo</h4>
+                            </div>
+                            <div class="final finaleq">
+                                <h4>Service</h4>
+                                <h4>$1/mo</h4>
+                            </div>
+                            <div class="final finaleq">
+                                <h4>Service</h4>
+                                <h4>$1/mo</h4>
+                            </div>
+                        </div>
+                        <div class="lowerndpage4">
+                            <h4>Total (per year)</h4>
+                            <h3>$120/yr</h3>
+                        </div>
+                    </div>
+
+                    <div class="finalpage">
+                        <div class="infinalpage">
+                            <img src="./img/icon-thank-you.jpg" alt="" width="100px" height="100px">
+                            <h1>Thank you!</h1>
+                            <div>
+                                <p>Thanks for confirming your subscription! We hope you have fun using our platform.If you ever need support, please feel free to email us at support@loremgaming.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="btn">
+                    <input class="back" type="submit" name="" id="back" value="Go Back" onclick="goback()">
+                    <input class="submit" type="submit" name="" id="next" value="Next Step" onclick="submit()">
+                </div>
+            </section>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
