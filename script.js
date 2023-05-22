@@ -227,9 +227,6 @@ const switchfn = () => {
         addon[2].nextElementSibling.setAttribute("title","3")
         currency="mo";
         cal=0;
-        for (let i = 0; i < 3; i++) {
-            addon[i].previousElementSibling.checked=false;  
-        }
         remove_selector();
         // console.log(month_name);
         flag = 0
