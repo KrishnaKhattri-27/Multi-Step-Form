@@ -327,7 +327,6 @@ const submit = () => {
                 e.lastElementChild.innerHTML = addon_price[w++]
             })
             document.querySelector('.lowerndpage4').lastElementChild.innerHTML=`$${cal}/${currency}`
-            // console.log(index);
             break;
 
             case 4:
