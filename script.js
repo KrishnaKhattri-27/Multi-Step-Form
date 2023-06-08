@@ -270,7 +270,7 @@ const submit = () => {
             let flag2=0;
             formdetail.forEach((e)=>{
                 if (e.value == "") {
-                    // document.querySelectorAll('.warning').classList.add('show')
+                  
                     e.previousElementSibling.lastElementChild.classList.add('show')
                     e.classList.add('warningadd')
                     console.log("hl");
@@ -322,7 +322,7 @@ const submit = () => {
             let q = 0;
             let w = 0;
             hill.forEach((e) => {
-                // adding_tag(e);
+               
                 e.firstElementChild.innerHTML = addon_name[q++]
                 e.lastElementChild.innerHTML = addon_price[w++]
             })
